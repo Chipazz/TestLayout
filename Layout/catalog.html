@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gllacy</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body class="body-catalog">
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a class="main-header-logo" href="index.html">
+                    <img src="img/Logo.png" wieht="154" height="64" alt="Логотип gllacy">
+                </a>
+            <div class="main-navigation-wrapper">
+                <div class="container-main">
+                    <ul class="site-navigation">
+                        <li class="catalog"><a href="#/">Каталог</a></li>
+                        <li class="delivery"><a href="#/">Доставка и оплата</a></li>
+                        <li class="company"><a href="#/">О компании</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li class="search" onclick="classToggle()"><a href="#/"></a></li>
+                        <li class="login-link"><a href="#/">Вход</a></li>
+                        <li class="bucket"><a href="#/">Корзина</a></li>
+                    </ul>
+                </div>
+            </div>
+            </nav>    
+        </header>
+        <main class="container-cat">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#/">Каталог</a></li>
+                <li><a href="#/">Сливочное</a></li>
+            </ul>
+            <h1 class="page-title">Сливочное мороженое</h1>
+            <p class="schedul-catal">С 10 до 20, ежедневно<br>
+                <b>8-812-450-25-25</b>
+             </p>
+            <section class="filter">
+                <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="filter-form" method="get" action="#">
+                    <div class="filter-sort">
+                    <p>Сортировка:</p>
+                    <select> 
+                        <option class="filter-option">
+                            По популярности
+                        </option>
+                        <option class="filter-option">
+                            По отзывам
+                        </option>
+                    </select>
+                    </div>
+                    <div class="filter-price">
+                        <p>Цена:</p>
+                            <input type="range" class="range-price">
+                    </div>
+                    <div class="filter-fat">
+                        <p>Жирность:</p>
+                        <ul>
+                            <li class="fatting">
+                                <input id="radio1" type="radio" name="fatting-group" value="0%">
+                                <label for="radio1">0%</label>
+                            </li>
+                            <li class="fatting">
+                                <input id="radio2" type="radio" name="fatting-group" value="10%" checked>
+                                <label for="radio2">до 10%</label>
+                            </li>
+                            <li class="fatting">
+                                <input id="radio3" type="radio" name="fatting-group" value="30%">
+                                <label for="radio3">до 30%</label>
+                            </li>
+                            <li class="fatting">
+                                <input id="radio4" type="radio" name="fatting-group" value="30%">
+                                <label for="radio4">выше 30%</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filter-filler">
+                        <p>Наполнители:</p>
+                        <ul>
+                            <li class="filter-info">
+                                <input type="checkbox" id="filler-chocolate" name="chocolate">
+                                <label for="filler-chocolate">Шоколадные</label>
+                            </li>
+                            <li class="filter-info">
+                                <input type="checkbox" id="filler-sugar" name="sugar">
+                                <label for="filler-sugar">Сахарные присыпки</label>
+                            <li>
+                            <li class="filter-info">
+                                <input type="checkbox" id="filler-fruit" name="fruit">
+                                <label for="filler-fruit">Фрукты</label>
+                            </li>
+                            <li class="filter-info">
+                                <input type="checkbox" id="filler-syrup" name="syrop">
+                                <label for="filler-syrup">Сироп</label>
+                            </li>
+                            <li class="filter-info">
+                                <input type="checkbox" id="filler-jam" name="jam">
+                                <label for="filler-jam">Джем</label>
+                            </li>
+                        </ul>
+                    </div>
+                <button type="submit" class="filter-button">Применить</button>
+            </form>
+        </main>        
+            <ul class="catalog-list">
+                <li class="item-orange">
+                    <b>310Р</b>
+                    <a href="#/" class="item-info">Сливочное с апельсиновым джемом</a>
+                </li>
+                <li class="item-cofe">
+                    <b>380Р</b>
+                    <a href="#/" class="item-info">Сливочно-кофейное с кусочками шоколада</a>
+                </li>
+                <li class="item-strawberry">
+                    <b>355Р</b>
+                    <a href="#/" class="item-info">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                </li>
+                <li class="item-crem">
+                    <b>415Р</b>
+                    <a href="#/" class="item-info">Сливочное крем-брюле с карамельной подливкой</a>
+                </li>
+                <li class="item-cowberry">
+                    <b>325Р</b>
+                    <a href="#/" class="item-info">Сливочное с брусничным джемом</a>
+                </li>
+                <li class="item-berry">
+                    <b>410Р</b>
+                    <a href="#/" class="item-info">Сливочно-черничное с цельными ягодами черники</a>
+                </li>
+                <li class="item-caramel">
+                    <b>375Р</b>
+                    <a href="#/" class="item-info">Сливочно-лимонное с карамельной присыпкой</a>
+                </li>
+                <li class="item-chocolate">
+                    <b>320Р</b>
+                    <a href="#/" class="item-info">Сливочное с шоколадной стружкой</a>
+                </li>
+                <li class="item-vanil">
+                    <b>440Р</b>
+                    <a href="#/" class="item-info">Сливочно-ванильное с кусочками шоколада</a>
+                </li>
+                <li class="item-mentol">
+                    <b>435Р</b>
+                    <a href="#/" class="item-info">Сливочное с ментоловым сиропом</a>
+                </li>
+                <li class="item-black">
+                    <b>355Р</b>
+                    <a href="#/" class="item-info">Сливочное с кусочками черного шоколада</a>
+                </li>
+                <li class="item-mint">
+                    <b>420Р</b>
+                    <a href="#/" class="item-info">Сливочное с мятными сиропом</a>
+                </li>
+            </ul>
+            <ul class="pagination-list">
+                <li class="pagination-item"><a href="#/">1</a></li>
+                <li class="pagination-item"><a href="#/">2</a></li>
+                <li class="pagination-item"><a href="#/">3</a></li>
+                <li class="pagination-item"><a href="#/">4</a></li>
+            </ul>
+        </section> 
+    <footer class="main-footer">
+        <div class="footer-social">
+            <div class="container-footer">
+                <ul class="social-icons">
+                    <li class="social-tw"><a class="social-button" href="#/"></a></li>
+                    <li class="social-inst"><a class="social-button" href="#/"></a></li>
+                    <li class="social-face"><a class="social-button" href="#/"></a></li>
+                    <li class="social-vk"><a class="social-button" href="#/"></a></li>
+                </ul>
+                <ul class="copyright">
+                    <div class="copyright-info">
+                        <li class="supl"><a href="#/">Для поставщиков</a></li>
+                        <li class="prod"><a href="#/">Наши документы</a></li>
+                        <li class="docinfo"><a href="#/">О производстве</a></li>
+                        <li class="standart"><a href="#/">Экологические стандарты</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <section class="modal-login">
+        <h2>Личный кабинет</h2>
+        <p>Введите логин и пароль.</p>
+        <form class="login-form" action="#" method="post">
+            <p>
+                <label class="visually-hidden" for="user-login"></label>
+                <input class="login-user" type="text" id="user-login" name="login" placeholder="Логин">
+            </p>
+            <p>
+                <label class="visually-hidden" for="password-login"></label>
+                <input class="login-password" type="password" id="password-login" name="password" placeholder="Пароль">
+            </p>
+            <p class="login-info">
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember" class="visually-hidden">
+                    <span class="checkbox-indicator"></span>
+                    Запомнить меня
+                </label>    
+            <a class="restore" href="#/">Я забыл пароль!</a>
+            </p>
+            <button class="login-button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button">x</button>
+    </section>
+    <section id="finder" class="modal-searchoff">
+        <input type="text" class="search-text" placeholder="Что ищем?">
+    </section>
+    <script>
+        function classToggle() {
+            finder.classList.toggle("modal-search");
+            finder.classList.toggle("modal-searchoff");
+        }
+
+        var link = document.querySelector(".login-link");
+
+        var popup = document.querySelector(".modal-login");
+        var close = popup.querySelector(".modal-close");
+
+        var form = popup.querySelector("form");
+        var login = popup.querySelector("[name=login]");
+        var password = popup.querySelector("[name=password]");
+
+        var isStorageSupprot = true;
+        var storage = "";
+
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            popup.classList.add("modal-show");
+
+            if (storage) {
+                login.value = storage;
+                password.focus();
+            } else {
+                login.focus();
+            }
+        });
+
+        close.addEventListener("click", function (event) {
+            event.preventDefault();
+            popup.classList.remove("modal-show");
+            popup.classList.remove("modal-error");
+        });
+
+        form.addEventListener("submit", function(event) {
+            if (!login.value || !password.value) {
+                event.preventDefault();
+                popup.classList.remove("modal-error");
+                popup.classList.add("modal-error");
+            } else {
+                if (isStorageSupprot) {
+                    localStorage.setItem("login", login.value);
+                }
+            }
+        });
+
+        window.addEventListener("keydown", function (event) {
+            if (event.keyCode === 27) {
+                event.preventDefault();
+                if (popup.classList.contains("modal-show")) {
+                    popup.classList.remove("modal-show");
+                    popup.classList.remove("modal-error");
+                }
+            }
+        });
+    </script>   
+    </body>         
+</html>
+               

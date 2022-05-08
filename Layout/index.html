@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gllacy</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a class="main-header-logo" href="index.html">
+                    <img src="img/Logo.png" wieht="154" height="64" alt="Логотип gllacy">
+                </a>
+            <div class="main-navigation-wrapper">
+                <div class="container-main">
+                    <ul class="site-navigation">
+                        <li class="catalog"><a href="catalog.html">Каталог</a></li>
+                        <li class="delivery"><a href="#/">Доставка и оплата</a></li>
+                        <li class="company"><a href="#/">О компании</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li class="search" onclick="classToggle()"><a href="#/"></a></li>
+                        <li class="login-link"><a href="#/">Вход</a></li>
+                        <li class="bucket"><a href="#/">Корзина</a></li>
+                    </ul>
+                </div>
+            </div>
+            </nav>
+        </header>
+        <div class="container">
+            <h1 class="hit-main">Крем-брюле и пломбир с малиновым джемом</h1>
+                <p class="schedule">С 10 до 20, ежедневно<br>
+                   <b>8-812-450-25-25</b>
+                </p>
+        </div>
+        <button class="button-main">Давайте оба!</button>
+        <h2 class="visually-hidden">Акции</h2>
+        <div class="stock-colums">
+            <section class="stoсk-left">
+                <h3 class="stock-name">Малинка даром!</h3>
+                    <p>При покупке 2 кг любого фруктового
+                        мороженого,добавим в ваш заказ банку
+                        малинового варенья бесплатно
+                    </p>   
+                <button class="button-left">Хочу варенье!</button>
+            </section>
+            <section class="stock-right">
+                <h3 class="stock-name">Шоколадки даром!</h3>
+                    <p>При покупке 2 кг пломбира, добавим в ваш
+                        заказ упаковку вкуснейшей шоколадной
+                        присыпки совершенно бесплатно
+                    </p>
+                <button class="button-right">Хочу шоколадку!</button>
+            </section>
+        </div>
+        <ul class="hit">
+            <li class="hit-item hit-item--orange"><img src="img/hit.png" alt="Хит">
+                <b>310Р</b>
+                <a href="#/" class="hit-info">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            </li>
+            <li class="hit-item hit-item--cofe"><img src="img/hit.png" alt="Хит">
+                <b>380Р</b>
+                <a href="#/" class="hit-info">Сливочно-кофейное с кусочками шоколада</a>
+            </li>
+            <li class="hit-item hit-item--strawberry"><img src="img/hit.png" alt="Хит">
+                <b>355Р</b>
+                <a href="#/" class="hit-info">Cливочно-клубничное с присыпкой из белого шоколада</a>
+            </li>
+            <li class="hit-item hit-item--crem"><img src="img/hit.png" alt="Хит"><b>415Р</b>
+                <a href="#/" class="hit-info">Сливочное крем-брюле с карамельной подливкой</a>
+            </li>
+        </ul>
+        <section class="features-bg">
+        <h4>Магазин Глэйси - это онлайн- и офлайн-магазинпо продаже
+            мороженого собственного производства на развес
+        </h4>
+        <ul class="features">
+            <li class="features-items"><img src="img/ice_cream.png" width="49" height="49"> 
+                <p>Все наше мороженое изготавливается на
+                    собственном производстве, с использованием
+                    современного оборудования и проверенных
+                    временем технологий.
+                </p>
+            </li>
+            <li class="features-items"><img src="img/cow.png" width="49" height="49"> 
+                <p>Закупка ингредиентов  производится только у
+                    проверенных фермерских хозяйств и компаний,
+                    с которыми нас связывает долговременное
+                    сотрудничество.
+                </p>
+            </li>
+            <li class="features-items"><img src="img/sheet.png" width="49" height="49"> 
+                <p>Для приготовления мороженого используются
+                    настоящие сливки и молоко высочайшего
+                    качества. Все дополнительные ингредиенты
+                    и добавки произведены из натурального,
+                    экологически чистого сырья.
+                </p>
+            </li>
+            <li class="features-items"><img src="img/thermometer.png" width="49" height="49"> 
+                <p>Доставка нашего мороженого до заказчиков
+                    осуществляется в специальном термопаке,
+                    который не дает мороженому растаять в пути и
+                    позволяет сохранить превосходный вкус.
+                </p>
+            </li>
+        </ul>
+        </section>
+        <div class="blog-appointment">
+        <section class="blog">
+            <p class="blog-info">Новое в нашем блоге
+                <a href="#/">10 способов сервировки фруктоввых
+                    щербетов к столу
+                </a>
+            </p>
+        </section>
+        <section class="appointment">
+            <p class="appointment-info">Подпишитесь на нашу сладкую рассылку
+                и будете всегда в курсе всего самого вкусного, что у
+                нас происходит. Обещаем не спамить и не слать
+                всякой ненужной ерунды. Честно =)</p>
+            <form class="appoinment-form" action="#/" method="post">
+                <p class="appoinment-item">
+                    <input id="appoinment-mail" type="text" name="mail" value="" placeholder="Электронная почта">
+                </p>
+            <button class="button" type="submit">Отправить</button>    
+            </form>
+        </section>
+        </div>
+        <section class="modal-login">
+            <h2>Личный кабинет</h2>
+            <p>Введите логин и пароль.</p>
+            <form class="login-form" action="#" method="post">
+                <p>
+                    <label class="visually-hidden" for="user-login"></label>
+                    <input class="login-user" type="text" id="user-login" name="login" placeholder="Логин">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="password-login"></label>
+                    <input class="login-password" type="password" id="password-login" name="password" placeholder="Пароль">
+                </p>
+                <p class="login-info">
+                    <label class="login-checkbox">
+                        <input type="checkbox" name="remember" class="visually-hidden">
+                        <span class="checkbox-indicator"></span>
+                        Запомнить меня
+                    </label>    
+                <a class="restore" href="#/">Я забыл пароль!</a>
+                </p>
+                <button class="login-button" type="submit">Войти</button>
+            </form>
+            <button class="modal-close" type="button">x</button>
+        </section>
+        <section id="finder" class="modal-searchoff">
+            <input type="text" class="search-text" placeholder="Что ищем?">
+        </section>
+        <section class="modal-feedback">
+            <h2>Мы обязательно вам ответим!</h2>
+            <form class="feedback-form" action="#/" method="post">
+                <p>
+                    <input class="name-user" type="text" placeholder="Как Вас зовут?">
+                </p>
+                <p>
+                    <input class="mail-user" type="text" placeholder="Ваша почта для ответа?">
+                </p>
+                <button class="feedback-button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button">x</button>
+        </section>
+
+        <script>
+            function classToggle() {
+                finder.classList.toggle("modal-search");
+                finder.classList.toggle("modal-searchoff");
+            }
+
+            var link = document.querySelector(".login-link");
+    
+            var popup = document.querySelector(".modal-login");
+            var close = popup.querySelector(".modal-close");
+    
+            var form = popup.querySelector("form");
+            var login = popup.querySelector("[name=login]");
+            var password = popup.querySelector("[name=password]");
+    
+            var isStorageSupprot = true;
+            var storage = "";
+    
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                popup.classList.add("modal-show");
+    
+                if (storage) {
+                    login.value = storage;
+                    password.focus();
+                } else {
+                    login.focus();
+                }
+            });
+    
+            close.addEventListener("click", function (event) {
+                event.preventDefault();
+                popup.classList.remove("modal-show");
+                popup.classList.remove("modal-error");
+            });
+    
+            form.addEventListener("submit", function(event) {
+                if (!login.value || !password.value) {
+                    event.preventDefault();
+                    popup.classList.remove("modal-error");
+                    popup.classList.add("modal-error");
+                } else {
+                    if (isStorageSupprot) {
+                        localStorage.setItem("login", login.value);
+                    }
+                }
+            });
+    
+            window.addEventListener("keydown", function (event) {
+                if (event.keyCode === 27) {
+                    event.preventDefault();
+                    if (popup.classList.contains("modal-show")) {
+                        popup.classList.remove("modal-show");
+                        popup.classList.remove("modal-error");
+                    }
+                }
+            });
+        </script>   
+    <footer class="main-footer">
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2393.9904400326113!2d30.32160482873139!3d59.93852706126841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y88YnI-ICAgICAgICAgICAgICAgICAgICAgICAgIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCz!5e0!3m2!1sru!2sru!4v1648576052797!5m2!1sru!2sru" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2 class="visually-hidden">Адрес</h2>
+                <div class="map-info">
+                    <div class="address">
+                        <p>Адрес главного офиса<br> 
+                        и офлайн-магазина<br>
+                        <b>ул. Большая Конюшенная<br>
+                        19/8, Санкт-Петербург</b><br>
+                        </p>
+                    </div>
+                    <div class="number">
+                        <p>Для заказов по телефону:<br>
+                        <b>8-812-450-25-25</b><br>
+                        (с 10 до 20 ежедневно)
+                        </p>
+                    </div>
+                    <button class="button-map">Форма обратной связи</button>
+                </div>
+        </section>
+        <div class="footer-social">
+            <div class="container-footer">
+                <ul class="social-icons">
+                    <li class="social-tw"><a class="social-button" href="#/"></a></li>
+                    <li class="social-inst"><a class="social-button" href="#/"></a></li>
+                    <li class="social-face"><a class="social-button" href="#/"></a></li>
+                    <li class="social-vk"><a class="social-button" href="#/"></a></li>
+                </ul>
+                <ul class="copyright">
+                    <div class="copyright-info">
+                        <li class="supl"><a href="#/">Для поставщиков</a></li>
+                        <li class="prod"><a href="#/">Наши документы</a></li>
+                        <li class="docinfo"><a href="#/">О производстве</a></li>
+                        <li class="standart"><a href="#/">Экологические стандарты</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <script>
+             var feedbackLink = document.querySelector(".button-map");
+
+            var feedbackPopup = document.querySelector(".modal-feedback");
+            var feedbackClose = feedbackPopup.querySelector(".modal-close");
+
+            feedbackLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                feedbackPopup.classList.add("feedback-show");
+            });
+
+            feedbackClose.addEventListener("click", function (event) {
+                event.preventDefault();
+                feedbackPopup.classList.remove("feedback-show");
+            });
+        </script>
+    </footer>  
+    </body>
+</html>
