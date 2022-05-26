@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sedona</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <nav class="main-navigation--wrapper">
+      <ul class="main-navigation">
+        <li class="main-navigation__items main-navigation__items--active"><a href="#/">информация</a></li>
+        <li class="main-navigation__items"><a href="#/">фото и видео</a></li>
+      </ul>
+      <img src="img/logo.jpg" />
+      <ul class="main-navigation">
+        <li class="main-navigation__items"><a href="#map">карта штата</a></li>
+        <li class="main-navigation__items"><a href="hotels.html">гостиницы</a></li>
+      </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main-container">
+        <h1 class="main-container__label">Sedona</h1>
+        <q class="main-container__quote"><i>Because the Grand Canyon lucks! </i></q>
+      </section>
+      <section class="main-info">
+        <h2 class="main-info__preview">
+          седона - небольшой городок в аризоне, заслуживающий большего!
+        </h2>
+        <p class="main-info__benefits">
+          рассмотрим 5 причин, по которым седона круче, чем гранл каньон!
+        </p>
+      </section>
+      <section class="advantage">
+        <section class="advantage-img">
+          <div>
+            <h3 class="advantage-img__main">настоящий<br />городок</h3>
+            <p class="advantage-img__items">- №1 -</p>
+            <p class="advantage-img__items">
+              седона - не аттракцион для туристов, там течет своя жизнь
+            </p>
+          </div>
+          <img src="img/advantage_top.jpg"/>
+        </section>
+        <ul class="advantage-options">
+          <li>
+            <img src="img/house.jpg" />
+            <h3>жилье</h3>
+            <p class="advantage-options__items">
+              рекомендуем пожить в настоящем мотеле, все как в кино!
+            </p>
+          </li>
+          <li>
+            <img src="img/food.jpg" />
+            <h3>еда</h3>
+            <p class="advantage-options__items">
+              всегда заказывайте фирменный бургейр, вы не разочаруетесь!
+            </p>
+          </li>
+          <li>
+            <img src="img/present.jpg" />
+            <h3>сувениры</h3>
+            <p class="advantage-options__items">
+              не только китайского, но и местного производства!
+            </p>
+          </li>
+        </ul>
+        <section class="advantage-img">
+            <img src="img/advantage_bottom.jpg" />
+          <div>
+            <h3 class="advantage-img__main">там есть<br />мост дьявола</h3>
+            <p class="advantage-img__items">- №2 -</p>
+            <p class="advantage-img__items">
+              да, по нему можно пройти! если конечно вы осмелитесь
+            </p>
+          </div>
+        </section>
+        <ul class="advantage-options">
+          <li>
+            <h3>небольшая площадь</h3>
+            <p class="advantage-options__items">- №3 -</p>
+            <p class="advantage-options__items">
+              все достопримечательности находятся очень близко
+            </p>
+          </li>
+          <li>
+            <h3>красивая дорого</h3>
+            <p class="advantage-options__items">- №4 -</p>
+            <p class="advantage-options__items">
+              ехать в седону из лас-вегаса совсем не скучно!
+            </p>
+          </li>
+          <li>
+            <h3>мало туристов</h3>
+            <p class="advantage-options__items">- №5 -</p>
+            <p class="advantage-options__items">
+              большинство едет в гранд каньон и толпится там
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="appointment">
+        <h2>заинтересовались?</h2>
+        <p>
+          укажите предполагаемые даты поездки,<br />
+          и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <div>
+        <button class="appointment__button">поиск гостиниц в седоне</button>
+        <section id="appointment" class="popap-appointment--off">
+          <div class="popap-date">
+          <label for="start">дата заезда:</label>
+          <input type="date" id="start" value="2022-05-17" min="2022-05-17" max="2023-05-17">
+          <label for="end">дата выезда:</label>
+          <input type="date" id="end" value="2022-05-17" min="2022-05-18" max="2023-05-18">
+          </div>
+          <div class="popap-counts">
+            <label class="adult-count" for="adult">взрослые:</label>
+            <span class="popap-counts__range">
+              <button class="popap-counts_minus">-</button>
+              <input type="number" id="adult" value="0">
+              <button class="popap-counts_plus">+</button>
+            </span>
+            <label class="children-count" for="children">дети:</label>
+            <span class="popap-counts__range">
+              <button class="popap-counts_minus">-</button>
+              <input type="number" id="children" value="0">
+              <button class="popap-counts_plus">+</button>
+            </span>
+          </div>
+          <button class="popap-button">найти</button>
+        </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a name="map"></a>
+      <div class="main-footer">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d129183.56577601402!2d-111.84726874546698!3d34.84817848289572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1652398087093!5m2!1sru!2sru" width="1200" height="450"style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <ul class="footer-social">
+          <li><a href="#/">#visitsedona</a></li>
+          <li>
+            <ul class="social__items">
+              <li>
+                <a href="#/"><img src="img/twitter.svg" /></a>
+              </li>
+              <li>
+                <a href="#/"><img src="img/youtube.svg" /></a>
+              </li>
+              <li>
+                <a href="#/"><img src="img/fb-icon.svg" /></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
